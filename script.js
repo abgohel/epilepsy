@@ -57,22 +57,15 @@
     });
 
     // ===== Smooth Scroll for Anchor Links =====
+    // Using CSS scroll-behavior: smooth + scroll-margin-top instead of JS
+    // This respects the header offset properly
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                
-                // Update URL without jumping
-                history.pushState(null, null, targetId);
-            }
+            // Just update URL, let CSS handle smooth scroll
+            history.pushState(null, null, targetId);
         });
     });
 
