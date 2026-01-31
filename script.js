@@ -47,12 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navToggle && nav) {
         navToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
+            // Update aria-expanded for accessibility
+            const isExpanded = nav.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isExpanded);
+            navToggle.setAttribute('aria-label', isExpanded ? 'Close navigation menu' : 'Open navigation menu');
         });
         
         // Close nav when clicking a link
         nav.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 nav.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.setAttribute('aria-label', 'Open navigation menu');
             });
         });
     }
