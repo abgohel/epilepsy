@@ -969,6 +969,12 @@ section[id] {
     text-align: center;
     box-shadow: var(--shadow-glass);
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card p {
+    flex-grow: 1;
 }
 
 .resource-card:hover {
