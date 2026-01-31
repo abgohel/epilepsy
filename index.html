@@ -418,6 +418,303 @@
                             <div class="finding-note">Excellent prognosis with resection</div>
                         </div>
                     </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🌊</span>
+                            <h3>Polymicrogyria (PMG)</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Abnormal cortical folding</strong> — too many small gyri</p>
+                            <ul>
+                                <li>Irregular cortical surface</li>
+                                <li>"Cobblestone" or stippled appearance</li>
+                                <li>Often perisylvian distribution</li>
+                                <li>May be unilateral or bilateral</li>
+                            </ul>
+                            <div class="finding-note">3D sequences essential — can mimic pachygyria on thick slices</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🔘</span>
+                            <h3>Heterotopia</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Gray matter in wrong location</strong> — neurons failed to migrate</p>
+                            <ul>
+                                <li><strong>PNH:</strong> Nodules lining ventricles</li>
+                                <li><strong>SBH:</strong> Band of gray matter in white matter</li>
+                                <li>Isointense to cortex on all sequences</li>
+                                <li>No enhancement, no edema</li>
+                            </ul>
+                            <div class="finding-note">PNH nodules follow gray matter signal — not to be confused with subependymal tubers</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">⚪</span>
+                            <h3>Tuberous Sclerosis (TSC)</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Genetic syndrome</strong> with multiple CNS lesions</p>
+                            <ul>
+                                <li><strong>Tubers:</strong> Cortical/subcortical T2 hyperintensity</li>
+                                <li><strong>SENs:</strong> Subependymal nodules (calcified)</li>
+                                <li><strong>SEGA:</strong> Growing lesion near foramen of Monro</li>
+                                <li>Radial migration lines in white matter</li>
+                            </ul>
+                            <div class="finding-note">Multiple tubers — identify the epileptogenic one with EEG/PET correlation</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🕳️</span>
+                            <h3>Temporal Pole Encephalocele</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Brain tissue herniating</strong> through skull base defect</p>
+                            <ul>
+                                <li>Temporal pole tissue in middle cranial fossa</li>
+                                <li>Often associated with TLE</li>
+                                <li>Best seen on coronal T2</li>
+                                <li>May have adjacent gliosis</li>
+                            </ul>
+                            <div class="finding-note">Easily missed — specifically look at temporal pole/skull base interface</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">💫</span>
+                            <h3>Encephalomalacia & Gliosis</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Acquired injury</strong> — post-trauma, stroke, infection</p>
+                            <ul>
+                                <li>CSF-like signal (encephalomalacia)</li>
+                                <li>T2/FLAIR hyperintense rim (gliosis)</li>
+                                <li>Volume loss, ex-vacuo dilation</li>
+                                <li>Hemosiderin if hemorrhagic</li>
+                            </ul>
+                            <div class="finding-note">Epileptogenic zone often in gliotic margin, not the cavity</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card dual-pathology">
+                        <div class="finding-header">
+                            <span class="finding-emoji">⚠️</span>
+                            <h3>Dual Pathology</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Two epileptogenic lesions</strong> — don't stop at the first finding!</p>
+                            <ul>
+                                <li>Classic: FCD + hippocampal sclerosis</li>
+                                <li>Tumor + MTS</li>
+                                <li>PMG + heterotopia</li>
+                                <li>Any combination possible</li>
+                            </ul>
+                            <div class="finding-note alert">Always complete the full systematic review — finding one lesion doesn't exclude another</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post-Processing Section -->
+        <section class="section postproc-section" id="postprocessing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">🖥️ Advanced Analysis</span>
+                    <h2>MRI Post-Processing</h2>
+                    <p>When visual inspection isn't enough — computational tools that detect subtle lesions</p>
+                </div>
+
+                <div class="postproc-intro">
+                    <div class="intro-card">
+                        <h3>Why Post-Processing?</h3>
+                        <p>Up to <strong>30% of drug-resistant epilepsy patients</strong> have "MRI-negative" epilepsy on visual inspection. Advanced computational analysis can detect subtle abnormalities invisible to the human eye — including small FCDs, subtle cortical thickening, and minor gray-white junction blurring.</p>
+                    </div>
+                </div>
+
+                <div class="postproc-grid">
+                    <div class="postproc-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Morphometric Analysis (MAP)</h3>
+                        <p>Voxel-by-voxel comparison of cortical features against normative data</p>
+                        <ul>
+                            <li>Junction maps (gray-white blurring)</li>
+                            <li>Extension maps (deep sulcal gray matter)</li>
+                            <li>Thickness maps (cortical thickening)</li>
+                            <li>Statistical Z-score thresholding</li>
+                        </ul>
+                        <div class="tech-note">Particularly useful for FCD Type II detection</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🧮</div>
+                        <h3>Voxel-Based Morphometry (VBM)</h3>
+                        <p>Automated detection of regional volume differences</p>
+                        <ul>
+                            <li>Gray matter concentration maps</li>
+                            <li>Automated hippocampal volumetry</li>
+                            <li>Asymmetry indices</li>
+                            <li>Comparison with healthy controls</li>
+                        </ul>
+                        <div class="tech-note">Helps quantify subtle hippocampal atrophy</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🔬</div>
+                        <h3>HARNESS-MRI Pipeline</h3>
+                        <p>Standardized post-processing for epilepsy imaging</p>
+                        <ul>
+                            <li>Automated lesion detection</li>
+                            <li>Surface-based analysis</li>
+                            <li>Machine learning classifiers</li>
+                            <li>Structured reporting output</li>
+                        </ul>
+                        <div class="tech-note">Integrates with HARNESS protocol acquisition</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>When to Request</h3>
+                        <p>Post-processing adds value when:</p>
+                        <ul>
+                            <li>Visual MRI reported as "normal"</li>
+                            <li>Clinical/EEG suggests focal onset</li>
+                            <li>Considering surgical evaluation</li>
+                            <li>Subtle finding needs confirmation</li>
+                        </ul>
+                        <div class="tech-note">Requires high-quality 3T acquisition (HARNESS protocol)</div>
+                    </div>
+                </div>
+
+                <div class="key-principle">
+                    <div class="principle-icon">💡</div>
+                    <div class="principle-content">
+                        <h4>Important Caveat</h4>
+                        <p><strong>Post-processing cannot fix a bad acquisition.</strong> Garbage in = garbage out. Always ensure the MRI is done on 3T with proper epilepsy protocol before requesting advanced analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PET/SPECT Section -->
+        <section class="section nuclear-section" id="pet-spect">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">☢️ Nuclear Imaging</span>
+                    <h2>PET & SPECT in Epilepsy</h2>
+                    <p>Functional imaging that reveals what structural MRI cannot</p>
+                </div>
+
+                <div class="nuclear-grid">
+                    <div class="nuclear-card">
+                        <div class="card-header pet">
+                            <span class="card-emoji">🔥</span>
+                            <h3>FDG-PET</h3>
+                            <span class="card-badge">Interictal</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Glucose metabolism mapping</strong> — done between seizures</p>
+                            <ul>
+                                <li><strong>Hypometabolism</strong> in epileptogenic zone</li>
+                                <li>Often larger than the actual lesion</li>
+                                <li>High sensitivity for temporal lobe epilepsy</li>
+                                <li>Helps lateralize when MRI is negative</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> MRI-negative TLE, confirming subtle MRI findings, surgical planning
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header spect-ictal">
+                            <span class="card-emoji">⚡</span>
+                            <h3>Ictal SPECT</h3>
+                            <span class="card-badge">During Seizure</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Blood flow during seizure</strong> — tracer injected in first 30 seconds</p>
+                            <ul>
+                                <li><strong>Hyperperfusion</strong> at seizure onset zone</li>
+                                <li>Requires rapid injection during seizure</li>
+                                <li>Timing is critical — late injection = propagation pattern</li>
+                                <li>Usually done during video-EEG monitoring</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> Extratemporal epilepsy, discordant data, MRI-negative cases
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header spect-interictal">
+                            <span class="card-emoji">😴</span>
+                            <h3>Interictal SPECT</h3>
+                            <span class="card-badge">Between Seizures</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Baseline blood flow</strong> — reference for SISCOM</p>
+                            <ul>
+                                <li>Often shows subtle <strong>hypoperfusion</strong></li>
+                                <li>Less localizing than ictal SPECT alone</li>
+                                <li>Essential for SISCOM subtraction</li>
+                                <li>Done ≥24h after last seizure</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> SISCOM analysis, baseline comparison
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header siscom">
+                            <span class="card-emoji">➖</span>
+                            <h3>SISCOM</h3>
+                            <span class="card-badge">Subtraction Analysis</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Subtraction Ictal SPECT Co-registered to MRI</strong></p>
+                            <ul>
+                                <li>Ictal minus interictal SPECT</li>
+                                <li>Thresholded difference overlaid on MRI</li>
+                                <li>Improves localization accuracy</li>
+                                <li>Helps identify seizure onset vs propagation</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> Extratemporal epilepsy, surgical planning, multimodal correlation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nuclear-summary">
+                    <h3>🎯 When to Order Nuclear Imaging</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>MRI negative but focal semiology/EEG</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Discordant MRI and EEG findings</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Multiple lesions — which is epileptogenic?</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Pre-surgical evaluation (standard of care)</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
