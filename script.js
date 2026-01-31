@@ -1,112 +1,139 @@
 // EpilepsyMRI.com - Interactive Features
 
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+    'use strict';
+
     // ===== Theme Toggle =====
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle?.querySelector('.theme-icon');
     
-    // Check for saved theme preference or default to system preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    function setTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggle?.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
         if (themeIcon) {
             themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+            themeIcon.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
         }
     }
-    
-    // Initialize theme
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else if (systemPrefersDark) {
-        setTheme('dark');
-    }
-    
-    // Toggle theme on click
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            setTheme(newTheme);
-        });
-    }
-    
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
 
     // ===== Mobile Navigation Toggle =====
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
-    
-    if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            // Update aria-expanded for accessibility
-            const isExpanded = nav.classList.contains('active');
-            navToggle.setAttribute('aria-expanded', isExpanded);
-            navToggle.setAttribute('aria-label', isExpanded ? 'Close navigation menu' : 'Open navigation menu');
+
+    navToggle?.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !isExpanded);
+        nav?.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            nav?.classList.remove('active');
+            navToggle?.setAttribute('aria-expanded', 'false');
         });
-        
-        // Close nav when clicking a link
-        nav.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-                navToggle.setAttribute('aria-expanded', 'false');
-                navToggle.setAttribute('aria-label', 'Open navigation menu');
-            });
-        });
-    }
-    
-    // ===== Smooth scroll for anchor links =====
+    });
+
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', (e) => {
+        if (nav?.classList.contains('active') && 
+            !nav.contains(e.target) && 
+            !navToggle?.contains(e.target)) {
+            nav.classList.remove('active');
+            navToggle?.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // ===== Smooth Scroll for Anchor Links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             
-            const target = document.querySelector(href);
-            if (target) {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
                 e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Update URL without jumping
+                history.pushState(null, null, targetId);
             }
         });
     });
-    
-    // ===== Header scroll effect =====
-    const header = document.querySelector('.header');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-        } else {
-            header.style.boxShadow = 'none';
-        }
-    });
-    
-    // ===== Intersection Observer for animations =====
+
+    // ===== Intersection Observer for Animations =====
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver((entries) => {
+
+    const fadeInObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
+                fadeInObserver.unobserve(entry.target);
             }
         });
     }, observerOptions);
-    
-    document.querySelectorAll('.patient-card, .finding-card, .resource-card, .checklist-card, .problem-card, .stat').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(card);
+
+    // Observe cards and sections for fade-in
+    document.querySelectorAll('.finding-card, .patient-card, .checklist-card, .resource-card, .problem-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        fadeInObserver.observe(el);
     });
-});
+
+    // Add visible class styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // ===== Header Scroll Effect =====
+    let lastScroll = 0;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            header?.classList.add('scrolled');
+        } else {
+            header?.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    }, { passive: true });
+
+    // ===== Protocol Table Row Highlighting =====
+    document.querySelectorAll('.protocol-table tr').forEach(row => {
+        row.addEventListener('mouseenter', () => {
+            row.style.background = 'var(--color-glass)';
+        });
+        row.addEventListener('mouseleave', () => {
+            row.style.background = '';
+        });
+    });
+
+    console.log('EpilepsyMRI.com loaded successfully 🧠');
+})();
