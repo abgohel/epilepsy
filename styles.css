@@ -1065,6 +1065,52 @@ section[id] {
     margin-top: 1.5rem;
 }
 
+/* ===== About Authors ===== */
+.about-authors {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.author {
+    text-align: center;
+}
+
+.author h4 {
+    margin-bottom: 0.25rem;
+}
+
+.author h4 a {
+    color: var(--color-primary);
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.author h4 a:hover {
+    color: var(--color-primary-dark);
+}
+
+.author p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.about-affiliation {
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 0.5rem !important;
+}
+
+.about-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* ===== Footer ===== */
 .footer {
     background: linear-gradient(135deg, #0F172A, #1E293B);
@@ -1370,6 +1416,96 @@ section[id] {
 [data-theme="dark"] .finding-note.alert {
     background: rgba(245, 158, 11, 0.2);
     color: #FCD34D;
+}
+
+/* ===== Quality Box ===== */
+.quality-box {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.08));
+    border: 2px solid rgba(251, 191, 36, 0.4);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quality-box h3 {
+    color: #B45309;
+    margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .quality-box h3 {
+    color: #FCD34D;
+}
+
+.quality-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.quality-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.quality-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.quality-item strong {
+    display: block;
+    color: var(--color-heading);
+    margin-bottom: 0.25rem;
+}
+
+.quality-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* ===== Definition Box ===== */
+.definition-section {
+    padding: 2rem 0;
+}
+
+.definition-box {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.05));
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.definition-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.definition-content h3 {
+    color: #DC2626;
+    margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .definition-content h3 {
+    color: #F87171;
+}
+
+.definition-content p {
+    margin-bottom: 0.5rem;
+}
+
+.definition-note {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin-top: 1rem !important;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 /* ===== References Section ===== */
