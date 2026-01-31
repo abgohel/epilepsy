@@ -69,7 +69,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
 }
 
 body {
@@ -140,7 +139,7 @@ ul {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: 2rem 0 5rem 0;
 }
 
 .section-header {
@@ -316,13 +315,9 @@ ul {
     }
 }
 
-/* Scroll margin for anchor navigation */
+/* Scroll margin for anchor navigation - header is ~70px tall */
 section[id] {
-    scroll-margin-top: 120px;
-}
-
-.section-header {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 70px;
 }
 
 /* ===== Hero ===== */
@@ -1375,6 +1370,71 @@ section[id] {
 [data-theme="dark"] .finding-note.alert {
     background: rgba(245, 158, 11, 0.2);
     color: #FCD34D;
+}
+
+/* ===== References Section ===== */
+.references-section {
+    background: var(--color-bg);
+}
+
+.references-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reference-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    background: var(--color-card-bg);
+    backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--color-glass-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.ref-number {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.ref-content p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.ref-authors {
+    font-weight: 600;
+    color: var(--color-heading);
+    margin-bottom: 0.25rem !important;
+}
+
+.ref-title {
+    color: var(--color-text);
+    margin-bottom: 0.25rem !important;
+}
+
+.ref-journal {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.ref-journal a {
+    color: var(--color-primary);
+}
+
+.ref-journal a:hover {
+    text-decoration: underline;
 }
 
 /* ===== Mobile Fixes ===== */
