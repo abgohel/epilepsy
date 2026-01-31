@@ -47,7 +47,7 @@ ul { list-style: none; }
 .section { padding: 5rem 0; }
 .section-header { text-align: center; margin-bottom: 3rem; }
 .section-badge { display: inline-block; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; padding: 0.35rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem; }
-.section-header h2 { margin-bottom: 0.5rem; }
+.section-header h2 { margin-bottom: 0.5rem; color: var(--color-dark); }
 .section-header p { color: var(--color-text-light); font-size: 1.1rem; }
 
 /* Header */
@@ -198,7 +198,7 @@ ul { list-style: none; }
 /* About */
 .about-section { background: white; }
 .about-content { max-width: 700px; margin: 0 auto; text-align: center; }
-.about-content h2 { margin-bottom: 1.5rem; }
+.about-content h2 { margin-bottom: 1.5rem; color: #0F172A !important; -webkit-text-fill-color: #0F172A !important; }
 .about-content p { color: var(--color-text-light); }
 .about-links { margin-top: 1.5rem; }
 
