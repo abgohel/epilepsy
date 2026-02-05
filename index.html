@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The definitive guide to Epilepsy MRI. Learn about 3T HARNESS Protocol, preparation, findings, and why specialized imaging matters.">
-    <meta name="keywords" content="epilepsy MRI, HARNESS protocol, 3T MRI, hippocampal sclerosis, FCD, seizure imaging">
-    
+    <meta name="description" content="Expert guide to epilepsy MRI by epileptologists. 3T HARNESS Protocol detects 30-50% more lesions. Patient prep, findings atlas, PET/SPECT, post-processing.">
+    <meta name="keywords" content="epilepsy MRI, HARNESS protocol, 3T MRI, hippocampal sclerosis, FCD, focal cortical dysplasia, seizure imaging, MTS, mesial temporal sclerosis, epilepsy surgery, drug-resistant epilepsy">
+    <meta name="author" content="Dr. Abhishek Gohel, Dr. Rutul Shah">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://epilepsymri.com/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://epilepsymri.com/">
     <meta property="og:title" content="EpilepsyMRI.com | 3T HARNESS Protocol Guide">
-    <meta property="og:description" content="The gold standard for epilepsy imaging. Learn why specialized MRI protocols detect up to 30% more lesions.">
-    
+    <meta property="og:description" content="Expert-reviewed guide to epilepsy MRI. 3T HARNESS Protocol detects 30-50% more lesions than standard MRI. By Dr. Abhishek Gohel & Dr. Rutul Shah.">
+    <meta property="og:image" content="https://epilepsymri.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="EpilepsyMRI.com">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EpilepsyMRI.com | 3T HARNESS Protocol Guide">
+    <meta name="twitter:description" content="Expert-reviewed guide to epilepsy MRI. 3T HARNESS Protocol detects 30-50% more lesions than standard MRI.">
+    <meta name="twitter:image" content="https://epilepsymri.com/og-image.png">
+
     <title>EpilepsyMRI.com | 3T HARNESS Protocol & Epilepsy Imaging Guide</title>
-    
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "EpilepsyMRI.com - 3T HARNESS Protocol Guide",
+        "description": "Expert guide to epilepsy MRI imaging including HARNESS protocol, findings atlas, and patient preparation.",
+        "url": "https://epilepsymri.com",
+        "author": [
+            {
+                "@type": "Physician",
+                "name": "Dr. Abhishek Gohel",
+                "qualification": "DM Neurology, PDF in Epilepsy",
+                "medicalSpecialty": "Epileptology"
+            },
+            {
+                "@type": "Physician", 
+                "name": "Dr. Rutul Shah",
+                "qualification": "DM Neurology, PDF in Epilepsy",
+                "medicalSpecialty": "Epileptology"
+            }
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gujarat Epilepsy & Neuro Clinic",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ahmedabad",
+                "addressCountry": "IN"
+            }
+        },
+        "medicalAudience": [
+            {"@type": "MedicalAudience", "audienceType": "Patient"},
+            {"@type": "MedicalAudience", "audienceType": "Clinician"}
+        ],
+        "about": {
+            "@type": "MedicalCondition",
+            "name": "Epilepsy"
+        },
+        "mainEntity": {
+            "@type": "MedicalProcedure",
+            "name": "HARNESS MRI Protocol",
+            "procedureType": "Diagnostic"
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.png">
+       <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <link rel="stylesheet" href="styles.css?v=13">
+<script defer src="https://analytics.meowachat.cloud/script.js" data-website-id="9b8ff2c2-327e-4b8a-b956-ddc71ad42592"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="container header-content">
@@ -28,18 +96,21 @@
             </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#harness" class="nav-link highlight">HARNESS Protocol</a></li>
-                    <li><a href="#patients" class="nav-link">For Patients</a></li>
-                    <li><a href="#clinicians" class="nav-link">For Clinicians</a></li>
-                    <li><a href="#findings" class="nav-link">Findings Atlas</a></li>
+                    <li><a href="#harness" class="nav-link highlight">HARNESS</a></li>
+                    <li><a href="#patients" class="nav-link">Patients</a></li>
+                    <li><a href="#clinicians" class="nav-link">Clinicians</a></li>
+                    <li><a href="#findings" class="nav-link">Findings</a></li>
+                    <li><a href="#postprocessing" class="nav-link">Post-Proc</a></li>
+                    <li><a href="#pet-spect" class="nav-link">PET/SPECT</a></li>
                     <li><a href="#resources" class="nav-link">Resources</a></li>
                 </ul>
             </nav>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
-                <span class="theme-icon">🌙</span>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle between light and dark mode"
+                title="Toggle theme">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
             </button>
-            <button class="nav-toggle" aria-label="Menu">
-                <span class="hamburger"></span>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger" aria-hidden="true"></span>
             </button>
         </div>
     </header>
@@ -51,11 +122,11 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="badge-icon">⚡</span>
-                        <span>Expert-Reviewed by Epileptologist</span>
+                        <span>Expert-Reviewed by Epileptologists</span>
                     </div>
                     <h1>Your MRI Holds Answers.<br><span class="gradient-text">Let's Find Them.</span></h1>
-                    <p class="hero-lead">Up to <strong>50% of epilepsy lesions are missed</strong> on standard MRI. The right protocol changes everything.</p>
-                    
+                    <p class="hero-lead">Up to <strong>30-50% of lesions in drug-resistant epilepsy</strong> are missed on standard MRI. The right protocol changes everything.</p>
+
                     <div class="hero-cta">
                         <a href="#harness" class="btn btn-primary btn-lg">
                             <span>🎯</span> Learn About HARNESS Protocol
@@ -64,7 +135,7 @@
                             <span>📋</span> Prepare for Your MRI
                         </a>
                     </div>
-                    
+
                     <div class="hero-stats">
                         <div class="stat">
                             <span class="stat-number">30%</span>
@@ -89,8 +160,8 @@
             <div class="container">
                 <div class="problem-grid">
                     <div class="problem-card wrong">
-                        <div class="card-icon">❌</div>
-                        <h3>Standard Brain MRI</h3>
+                        <div class="card-icon" aria-hidden="true">❌</div>
+                        <h2>Standard Brain MRI</h2>
                         <ul>
                             <li>1.5T field strength</li>
                             <li>Generic brain protocol</li>
@@ -98,11 +169,11 @@
                             <li>Wrong angulation for hippocampus</li>
                             <li>Missing key sequences</li>
                         </ul>
-                        <div class="card-result bad">Misses up to 50% of lesions</div>
+                        <div class="card-result bad">Misses up to 30-50% of lesions</div>
                     </div>
                     <div class="problem-card right">
-                        <div class="card-icon">✅</div>
-                        <h3>3T HARNESS Protocol</h3>
+                        <div class="card-icon" aria-hidden="true">✅</div>
+                        <h2>3T HARNESS Protocol</h2>
                         <ul>
                             <li>3 Tesla field strength</li>
                             <li>Epilepsy-specific sequences</li>
@@ -116,6 +187,20 @@
             </div>
         </section>
 
+        <!-- Drug-Resistant Epilepsy Definition -->
+        <section class="section definition-section">
+            <div class="container">
+                <div class="definition-box">
+                    <div class="definition-icon">📋</div>
+                    <div class="definition-content">
+                        <h3>What is Drug-Resistant Epilepsy?</h3>
+                        <p><strong>Definition (ILAE):</strong> Failure of two appropriately chosen and tolerated anti-seizure medications to achieve sustained seizure freedom.</p>
+                        <p class="definition-note">If you meet this criteria, you should be evaluated at a <strong>comprehensive epilepsy center</strong> for surgical options. The average delay from epilepsy onset to surgery is 20+ years — don't wait.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- HARNESS Protocol Section -->
         <section class="section harness-section" id="harness">
             <div class="container">
@@ -124,11 +209,12 @@
                     <h2>3T MRI Brain HARNESS Protocol</h2>
                     <p>Harmonized Neuroimaging of Epilepsy Structural Sequences — The ILAE-recommended gold standard</p>
                 </div>
-                
+
                 <div class="harness-highlight">
                     <div class="highlight-content">
                         <h3>Why HARNESS?</h3>
-                        <p>Standard MRI protocols were designed for strokes, tumors, and general pathology — not for the subtle lesions that cause epilepsy. HARNESS was developed specifically to detect:</p>
+                        <p>Standard MRI protocols were designed for strokes, tumors, and general pathology — not for the
+                            subtle lesions that cause epilepsy. HARNESS was developed specifically to detect:</p>
                         <ul class="check-list">
                             <li>Hippocampal sclerosis (MTS)</li>
                             <li>Focal cortical dysplasia (FCD)</li>
@@ -203,12 +289,6 @@
                     </table>
                 </div>
 
-                <div class="protocol-cta">
-                    <a href="#resources" class="btn btn-primary">
-                        <span>📄</span> Download Protocol Card (PDF)
-                    </a>
-                    <p class="cta-note">Print and share with your MRI center</p>
-                </div>
             </div>
         </section>
 
@@ -229,11 +309,10 @@
                             <li>Remove all metal (jewelry, watches, hair clips)</li>
                             <li>Wear comfortable clothes without metal</li>
                             <li>Inform staff of any implants or devices</li>
-                            <li>You may be asked to sleep less the night before</li>
                             <li>Scan takes 45-60 minutes — stay still</li>
                         </ul>
                     </div>
-                    
+
                     <div class="patient-card">
                         <div class="card-icon">🔊</div>
                         <h3>During the Scan</h3>
@@ -242,10 +321,11 @@
                             <li>You can communicate via intercom</li>
                             <li>Try to relax — anxiety is normal</li>
                             <li>Close your eyes if it helps</li>
-                            <li>Movement blurs images — stay as still as possible</li>
+                            <li><strong>Stay completely still</strong> — even small movements blur the images</li>
+                            <li>Swallow only between sequences when technologist says</li>
                         </ul>
                     </div>
-                    
+
                     <div class="patient-card">
                         <div class="card-icon">❓</div>
                         <h3>What If My MRI Is "Normal"?</h3>
@@ -256,6 +336,33 @@
                             <li>Advanced post-processing can reveal subtle lesions</li>
                             <li>Normal MRI doesn't mean surgery isn't possible</li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="quality-box">
+                    <h3>⚠️ Quality is Critical</h3>
+                    <div class="quality-points">
+                        <div class="quality-item">
+                            <span class="quality-icon">🚫</span>
+                            <div>
+                                <strong>No Movement</strong>
+                                <p>Even 1-2mm of motion can blur subtle lesions like FCD. If you moved, tell the technologist — they may need to repeat sequences.</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <span class="quality-icon">📐</span>
+                            <div>
+                                <strong>Complete Coverage</strong>
+                                <p>The scan must cover your entire brain including temporal poles. Clipped images miss important areas.</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <span class="quality-icon">🔄</span>
+                            <div>
+                                <strong>Don't Rush</strong>
+                                <p>A proper epilepsy MRI takes 45-60 minutes. Shorter scans may be incomplete. Quality over speed.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -293,7 +400,7 @@
                             <li>Fornix/mammillary body atrophy</li>
                         </ul>
                     </div>
-                    
+
                     <div class="checklist-card">
                         <h3>🔍 FCD Checklist</h3>
                         <ul class="check-list">
@@ -306,7 +413,7 @@
                             <li>Subtle — compare both hemispheres</li>
                         </ul>
                     </div>
-                    
+
                     <div class="checklist-card">
                         <h3>🔍 Red Flags</h3>
                         <ul class="check-list alert">
@@ -323,7 +430,9 @@
                     <div class="principle-icon">💡</div>
                     <div class="principle-content">
                         <h4>Key Principle</h4>
-                        <p><strong>Always correlate with semiology and EEG.</strong> The MRI finding must make sense with the clinical picture. A right temporal lesion doesn't explain left arm clonic seizures.</p>
+                        <p><strong>Always correlate with semiology and EEG.</strong> The MRI finding must make sense
+                            with the clinical picture. A right temporal lesion doesn't explain left arm clonic seizures. A left occipital lesion doesn't explain speech arrest with preserved awareness.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -364,12 +473,12 @@
                         <div class="finding-body">
                             <p><strong>Developmental malformation</strong> — neurons in wrong place/orientation</p>
                             <ul>
-                                <li>Type I: Subtle, often MRI-negative</li>
-                                <li>Type II: Cortical thickening, transmantle sign</li>
-                                <li>Gray-white blurring</li>
-                                <li>Bottom-of-sulcus common</li>
+                                <li><strong>Type I:</strong> Subtle, often MRI-negative</li>
+                                <li><strong>Type II:</strong> Cortical thickening, transmantle sign</li>
+                                <li><strong>Type III:</strong> FCD adjacent to another lesion (MTS, tumor, vascular)</li>
+                                <li>Gray-white blurring, bottom-of-sulcus location</li>
                             </ul>
-                            <div class="finding-note">May require 3T + post-processing to detect</div>
+                            <div class="finding-note">Type III reinforces dual pathology — always complete systematic review</div>
                         </div>
                     </div>
 
@@ -406,6 +515,303 @@
                             <div class="finding-note">Excellent prognosis with resection</div>
                         </div>
                     </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🌊</span>
+                            <h3>Polymicrogyria (PMG)</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Abnormal cortical folding</strong> — too many small gyri</p>
+                            <ul>
+                                <li>Irregular cortical surface</li>
+                                <li>"Cobblestone" or stippled appearance</li>
+                                <li>Often perisylvian distribution</li>
+                                <li>May be unilateral or bilateral</li>
+                            </ul>
+                            <div class="finding-note">3D sequences essential — can mimic pachygyria on thick slices</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🔘</span>
+                            <h3>Heterotopia</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Gray matter in wrong location</strong> — neurons failed to migrate</p>
+                            <ul>
+                                <li><strong>PNH:</strong> Nodules lining ventricles</li>
+                                <li><strong>SBH:</strong> Band of gray matter in white matter</li>
+                                <li>Isointense to cortex on all sequences</li>
+                                <li>No enhancement, no edema</li>
+                            </ul>
+                            <div class="finding-note">PNH nodules follow gray matter signal — not to be confused with subependymal tubers</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">⚪</span>
+                            <h3>Tuberous Sclerosis (TSC)</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Genetic syndrome</strong> with multiple CNS lesions</p>
+                            <ul>
+                                <li><strong>Tubers:</strong> Cortical/subcortical T2 hyperintensity</li>
+                                <li><strong>SENs:</strong> Subependymal nodules (calcified)</li>
+                                <li><strong>SEGA:</strong> Growing lesion near foramen of Monro</li>
+                                <li>Radial migration lines in white matter</li>
+                            </ul>
+                            <div class="finding-note">Multiple tubers — identify the epileptogenic one with EEG/PET correlation</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">🕳️</span>
+                            <h3>Temporal Pole Encephalocele</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Brain tissue herniating</strong> through skull base defect</p>
+                            <ul>
+                                <li>Temporal pole tissue in middle cranial fossa</li>
+                                <li>Often associated with TLE</li>
+                                <li>Best seen on coronal T2</li>
+                                <li>May have adjacent gliosis</li>
+                            </ul>
+                            <div class="finding-note">Easily missed — specifically look at temporal pole/skull base interface</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="finding-emoji">💫</span>
+                            <h3>Encephalomalacia & Gliosis</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Acquired injury</strong> — post-trauma, stroke, infection</p>
+                            <ul>
+                                <li>CSF-like signal (encephalomalacia)</li>
+                                <li>T2/FLAIR hyperintense rim (gliosis)</li>
+                                <li>Volume loss, ex-vacuo dilation</li>
+                                <li>Hemosiderin if hemorrhagic</li>
+                            </ul>
+                            <div class="finding-note">Epileptogenic zone often in gliotic margin, not the cavity</div>
+                        </div>
+                    </div>
+
+                    <div class="finding-card dual-pathology">
+                        <div class="finding-header">
+                            <span class="finding-emoji">⚠️</span>
+                            <h3>Dual Pathology</h3>
+                        </div>
+                        <div class="finding-body">
+                            <p><strong>Two epileptogenic lesions</strong> — don't stop at the first finding!</p>
+                            <ul>
+                                <li>Classic: FCD + hippocampal sclerosis</li>
+                                <li>Tumor + MTS</li>
+                                <li>PMG + heterotopia</li>
+                                <li>Any combination possible</li>
+                            </ul>
+                            <div class="finding-note alert">Always complete the full systematic review — finding one lesion doesn't exclude another</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post-Processing Section -->
+        <section class="section postproc-section" id="postprocessing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">🖥️ Advanced Analysis</span>
+                    <h2>MRI Post-Processing</h2>
+                    <p>When visual inspection isn't enough — computational tools that detect subtle lesions</p>
+                </div>
+
+                <div class="postproc-intro">
+                    <div class="intro-card">
+                        <h3>Why Post-Processing?</h3>
+                        <p>Up to <strong>30% of drug-resistant epilepsy patients</strong> have "MRI-negative" epilepsy on visual inspection. Advanced computational analysis can detect subtle abnormalities invisible to the human eye — including small FCDs, subtle cortical thickening, and minor gray-white junction blurring.</p>
+                    </div>
+                </div>
+
+                <div class="postproc-grid">
+                    <div class="postproc-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Morphometric Analysis (MAP)</h3>
+                        <p>Voxel-by-voxel comparison of cortical features against normative data</p>
+                        <ul>
+                            <li>Junction maps (gray-white blurring)</li>
+                            <li>Extension maps (deep sulcal gray matter)</li>
+                            <li>Thickness maps (cortical thickening)</li>
+                            <li>Statistical Z-score thresholding</li>
+                        </ul>
+                        <div class="tech-note">Particularly useful for FCD Type II detection</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🧮</div>
+                        <h3>Voxel-Based Morphometry (VBM)</h3>
+                        <p>Automated detection of regional volume differences</p>
+                        <ul>
+                            <li>Gray matter concentration maps</li>
+                            <li>Automated hippocampal volumetry</li>
+                            <li>Asymmetry indices</li>
+                            <li>Comparison with healthy controls</li>
+                        </ul>
+                        <div class="tech-note">Helps quantify subtle hippocampal atrophy</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🔬</div>
+                        <h3>HARNESS-MRI Pipeline</h3>
+                        <p>Standardized post-processing for epilepsy imaging</p>
+                        <ul>
+                            <li>Automated lesion detection</li>
+                            <li>Surface-based analysis</li>
+                            <li>Machine learning classifiers</li>
+                            <li>Structured reporting output</li>
+                        </ul>
+                        <div class="tech-note">Integrates with HARNESS protocol acquisition</div>
+                    </div>
+
+                    <div class="postproc-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>When to Request</h3>
+                        <p>Post-processing adds value when:</p>
+                        <ul>
+                            <li>Visual MRI reported as "normal"</li>
+                            <li>Clinical/EEG suggests focal onset</li>
+                            <li>Considering surgical evaluation</li>
+                            <li>Subtle finding needs confirmation</li>
+                        </ul>
+                        <div class="tech-note">Requires high-quality 3T acquisition (HARNESS protocol)</div>
+                    </div>
+                </div>
+
+                <div class="key-principle">
+                    <div class="principle-icon">💡</div>
+                    <div class="principle-content">
+                        <h4>Important Caveat</h4>
+                        <p><strong>Post-processing cannot fix a bad acquisition.</strong> Garbage in = garbage out. Always ensure the MRI is done on 3T with proper epilepsy protocol before requesting advanced analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PET/SPECT Section -->
+        <section class="section nuclear-section" id="pet-spect">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">☢️ Nuclear Imaging</span>
+                    <h2>PET & SPECT in Epilepsy</h2>
+                    <p>Functional imaging that reveals what structural MRI cannot</p>
+                </div>
+
+                <div class="nuclear-grid">
+                    <div class="nuclear-card">
+                        <div class="card-header pet">
+                            <span class="card-emoji">🔥</span>
+                            <h3>FDG-PET</h3>
+                            <span class="card-badge">Interictal</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Glucose metabolism mapping</strong> — done between seizures</p>
+                            <ul>
+                                <li><strong>Hypometabolism</strong> in epileptogenic zone</li>
+                                <li>Often larger than the actual lesion</li>
+                                <li>High sensitivity for temporal lobe epilepsy</li>
+                                <li>Helps lateralize when MRI is negative</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> MRI-negative TLE, confirming subtle MRI findings, surgical planning
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header spect-ictal">
+                            <span class="card-emoji">⚡</span>
+                            <h3>Ictal SPECT</h3>
+                            <span class="card-badge">During Seizure</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Blood flow during seizure</strong> — tracer injected in first 30 seconds</p>
+                            <ul>
+                                <li><strong>Hyperperfusion</strong> at seizure onset zone</li>
+                                <li>Requires rapid injection during seizure</li>
+                                <li>Timing is critical — late injection = propagation pattern</li>
+                                <li>Usually done during video-EEG monitoring</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> Extratemporal epilepsy, discordant data, MRI-negative cases
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header spect-interictal">
+                            <span class="card-emoji">😴</span>
+                            <h3>Interictal SPECT</h3>
+                            <span class="card-badge">Between Seizures</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Baseline blood flow</strong> — reference for SISCOM</p>
+                            <ul>
+                                <li>Often shows subtle <strong>hypoperfusion</strong></li>
+                                <li>Less localizing than ictal SPECT alone</li>
+                                <li>Essential for SISCOM subtraction</li>
+                                <li>Done ≥24h after last seizure</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> SISCOM analysis, baseline comparison
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nuclear-card">
+                        <div class="card-header siscom">
+                            <span class="card-emoji">➖</span>
+                            <h3>SISCOM</h3>
+                            <span class="card-badge">Subtraction Analysis</span>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Subtraction Ictal SPECT Co-registered to MRI</strong></p>
+                            <ul>
+                                <li>Ictal minus interictal SPECT</li>
+                                <li>Thresholded difference overlaid on MRI</li>
+                                <li>Improves localization accuracy</li>
+                                <li>Helps identify seizure onset vs propagation</li>
+                            </ul>
+                            <div class="indication">
+                                <strong>Best for:</strong> Extratemporal epilepsy, surgical planning, multimodal correlation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nuclear-summary">
+                    <h3>🎯 When to Order Nuclear Imaging</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>MRI negative but focal semiology/EEG</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Discordant MRI and EEG findings</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Multiple lesions — which is epileptogenic?</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="check">✓</span>
+                            <span>Pre-surgical evaluation (standard of care)</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -414,31 +820,31 @@
         <section class="section resources-section" id="resources">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-badge">📥 Resources</span>
-                    <h2>Downloadable Tools</h2>
-                    <p>Print-ready materials for patients and clinicians</p>
+                    <span class="section-badge">🧭 Quick Navigation</span>
+                    <h2>Jump to What You Need</h2>
+                    <p>Quick links to key sections of this guide</p>
                 </div>
 
                 <div class="resources-grid">
                     <div class="resource-card">
-                        <div class="resource-icon">📄</div>
-                        <h3>HARNESS Protocol Card</h3>
-                        <p>One-page protocol specification for your MRI center</p>
-                        <a href="#" class="btn btn-outline">Download PDF</a>
+                        <div class="resource-icon" aria-hidden="true">⭐</div>
+                        <h3>HARNESS Protocol</h3>
+                        <p>The gold-standard epilepsy MRI protocol with required sequences</p>
+                        <a href="#harness" class="btn btn-outline">View Protocol →</a>
                     </div>
-                    
+
                     <div class="resource-card">
-                        <div class="resource-icon">✅</div>
-                        <h3>Patient Prep Checklist</h3>
-                        <p>What to do before your epilepsy MRI</p>
-                        <a href="#" class="btn btn-outline">Download PDF</a>
+                        <div class="resource-icon" aria-hidden="true">👤</div>
+                        <h3>Patient Guide</h3>
+                        <p>Preparation tips, what to expect, and questions for your doctor</p>
+                        <a href="#patients" class="btn btn-outline">Read Guide →</a>
                     </div>
-                    
+
                     <div class="resource-card">
-                        <div class="resource-icon">❓</div>
-                        <h3>Questions for Your Doctor</h3>
-                        <p>Key questions to ask about your MRI</p>
-                        <a href="#" class="btn btn-outline">Download PDF</a>
+                        <div class="resource-icon" aria-hidden="true">🩺</div>
+                        <h3>Clinician Checklists</h3>
+                        <p>Systematic approach to reading epilepsy MRI</p>
+                        <a href="#clinicians" class="btn btn-outline">View Checklists →</a>
                     </div>
                 </div>
             </div>
@@ -449,7 +855,8 @@
             <div class="container">
                 <div class="cta-content">
                     <h2>Had an MRI But Still Have Seizures?</h2>
-                    <p>A "normal" MRI on standard protocol doesn't mean there's no lesion. Consider evaluation at a comprehensive epilepsy center with 3T HARNESS protocol imaging.</p>
+                    <p>A "normal" MRI on standard protocol doesn't mean there's no lesion. Consider evaluation at a
+                        comprehensive epilepsy center with 3T HARNESS protocol imaging.</p>
                     <a href="#harness" class="btn btn-primary btn-lg">Learn About Proper Imaging</a>
                 </div>
             </div>
@@ -460,15 +867,94 @@
             <div class="container">
                 <div class="about-content">
                     <h2>About This Resource</h2>
-                    <p>EpilepsyMRI.com is created and maintained by <strong>Dr. Abhishek Gohel</strong>, Epileptologist at Gujarat Epilepsy & Neuro Clinic and KD Hospital, Ahmedabad.</p>
+                    <p>EpilepsyMRI.com is created and maintained by:</p>
+                    <div class="about-authors">
+                        <div class="author">
+                            <h4><a href="https://x.com/abgohel" target="_blank" rel="noopener">Dr. Abhishek Gohel</a></h4>
+                            <p>DM Neurology, PDF in Epilepsy<br>Epileptologist</p>
+                        </div>
+                        <div class="author">
+                            <h4><a href="https://in.linkedin.com/in/dr-rutul-shah-ba817996" target="_blank" rel="noopener">Dr. Rutul Shah</a></h4>
+                            <p>DM Neurology, PDF in Epilepsy<br>Epileptologist</p>
+                        </div>
+                    </div>
+                    <p class="about-affiliation">Gujarat Epilepsy & Neuro Clinic, Ahmedabad | KD Hospital</p>
                     <p>Specializing in drug-refractory epilepsy, LTVEEG, and pre-surgical evaluation.</p>
                     <div class="about-links">
                         <a href="https://firstseizure.com" class="btn btn-outline">FirstSeizure.com</a>
+                        <a href="https://epilepsypregnancy.in" class="btn btn-outline">EpilepsyPregnancy.in</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- References Section -->
+    <section class="section references-section" id="references">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📖 References</span>
+                <h2>Key Literature</h2>
+                <p>Evidence-based guidelines and seminal papers</p>
+            </div>
+
+            <div class="references-list">
+                <div class="reference-item">
+                    <span class="ref-number">1</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">Bernasconi A, Cendes F, Theodore WH, et al.</p>
+                        <p class="ref-title">Recommendations for the use of structural magnetic resonance imaging in the care of patients with epilepsy: A consensus report from the International League Against Epilepsy Neuroimaging Task Force.</p>
+                        <p class="ref-journal">Epilepsia. 2019;60(6):1054-1068. <a href="https://doi.org/10.1111/epi.15612" target="_blank" rel="noopener">doi:10.1111/epi.15612</a></p>
+                    </div>
+                </div>
+
+                <div class="reference-item">
+                    <span class="ref-number">2</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">Blümcke I, Thom M, Aronica E, et al.</p>
+                        <p class="ref-title">The clinicopathologic spectrum of focal cortical dysplasias: A consensus classification proposed by an ad hoc Task Force of the ILAE Diagnostic Methods Commission.</p>
+                        <p class="ref-journal">Epilepsia. 2011;52(1):158-174. <a href="https://doi.org/10.1111/j.1528-1167.2010.02777.x" target="_blank" rel="noopener">doi:10.1111/j.1528-1167.2010.02777.x</a></p>
+                    </div>
+                </div>
+
+                <div class="reference-item">
+                    <span class="ref-number">3</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">Cendes F, Sakamoto AC, Spreafico R, Bingaman W, Bhatiа M.</p>
+                        <p class="ref-title">Epilepsies associated with hippocampal sclerosis.</p>
+                        <p class="ref-journal">Acta Neuropathol. 2014;128(1):21-37. <a href="https://doi.org/10.1007/s00401-014-1292-0" target="_blank" rel="noopener">doi:10.1007/s00401-014-1292-0</a></p>
+                    </div>
+                </div>
+
+                <div class="reference-item">
+                    <span class="ref-number">4</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">Vattipally VR, Bronen RA.</p>
+                        <p class="ref-title">MR imaging of epilepsy: strategies for successful interpretation.</p>
+                        <p class="ref-journal">Magn Reson Imaging Clin N Am. 2006;14(2):225-247. <a href="https://doi.org/10.1016/j.mric.2006.06.001" target="_blank" rel="noopener">doi:10.1016/j.mric.2006.06.001</a></p>
+                    </div>
+                </div>
+
+                <div class="reference-item">
+                    <span class="ref-number">5</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">Wang ZI, Alexopoulos AV, So NK, et al.</p>
+                        <p class="ref-title">Morphometric MRI in patients with suspected epileptogenic lesions: correlation with EEG and surgical outcome.</p>
+                        <p class="ref-journal">Epilepsia. 2015;56(2):255-262. <a href="https://doi.org/10.1111/epi.12882" target="_blank" rel="noopener">doi:10.1111/epi.12882</a></p>
+                    </div>
+                </div>
+
+                <div class="reference-item">
+                    <span class="ref-number">6</span>
+                    <div class="ref-content">
+                        <p class="ref-authors">O'Brien TJ, So EL, Mullan BP, et al.</p>
+                        <p class="ref-title">Subtraction ictal SPECT co-registered to MRI improves clinical usefulness of SPECT in localizing the surgical seizure focus.</p>
+                        <p class="ref-journal">Neurology. 1998;50(2):445-454. <a href="https://doi.org/10.1212/WNL.50.2.445" target="_blank" rel="noopener">doi:10.1212/WNL.50.2.445</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container footer-content">
@@ -476,11 +962,13 @@
                 <span class="logo-icon">🧠</span>
                 <span>EpilepsyMRI.com</span>
             </div>
-            <p class="disclaimer">This information is for educational purposes only and does not constitute medical advice. Always consult your healthcare provider for medical decisions.</p>
-            <p class="copyright">© 2026 Dr. Abhishek Gohel. All rights reserved.</p>
+            <p class="disclaimer">This information is for educational purposes only and does not constitute medical
+                advice. Always consult your healthcare provider for medical decisions.</p>
+            <p class="copyright">© 2026 Dr. Abhishek Gohel & Dr. Rutul Shah. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
