@@ -25,15 +25,15 @@
                 "name": "What is the HARNESS protocol for epilepsy MRI?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "HARNESS (Harmonized Neuroimaging of Epilepsy Structural Sequences) is a standardized MRI protocol developed by the ILAE for detecting epilepsy-causing lesions. It includes specific sequences optimized for finding subtle abnormalities like focal cortical dysplasia and hippocampal sclerosis that routine MRI may miss."
+                    "text": "HARNESS (Harmonized Neuroimaging of Epilepsy Structural Sequences) is a standardized MRI protocol developed by the ILAE for detecting epilepsy-causing lesions."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Why do I need a special epilepsy MRI if I already had a brain MRI?",
+                "name": "Why do I need a special epilepsy MRI?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Routine brain MRI is designed to detect large abnormalities like tumors or strokes. Epilepsy-causing lesions are often very subtle and require specialized sequences, thinner slices (1mm vs 5mm), and higher field strength (3T vs 1.5T). The HARNESS protocol detects 30-50% more lesions than routine MRI."
+                    "text": "Routine brain MRI misses 30-50% of epilepsy-causing lesions. The HARNESS protocol uses specialized sequences and thinner slices."
                 }
             },
             {
@@ -41,139 +41,206 @@
                 "name": "Is 3T MRI better than 1.5T for epilepsy?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, 3T MRI provides higher resolution and better signal-to-noise ratio, making it easier to detect subtle epileptogenic lesions. Studies show 3T MRI detects significantly more focal cortical dysplasia and hippocampal sclerosis than 1.5T MRI. Always request 3T for epilepsy imaging when available."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What lesions does epilepsy MRI look for?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Epilepsy MRI looks for: hippocampal sclerosis (MTS), focal cortical dysplasia (FCD), tumors (ganglioglioma, DNET), cavernomas, vascular malformations, post-traumatic gliosis, encephalitis sequelae, and cortical tubers. Finding a lesion is crucial for surgical planning in drug-resistant epilepsy."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does an epilepsy MRI take?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A complete epilepsy MRI with HARNESS protocol takes 45-60 minutes. This is longer than routine brain MRI (15-20 minutes) because it includes more sequences with thinner slices for detailed evaluation."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What if my epilepsy MRI is normal?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "About 20-30% of epilepsy patients have normal MRI even with optimal protocols (MRI-negative epilepsy). In these cases, other tests like PET scan, ictal SPECT, or MEG may help localize the seizure focus. Advanced MRI post-processing techniques can also reveal subtle abnormalities."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do I need contrast for epilepsy MRI?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Contrast (gadolinium) is not routinely needed for epilepsy MRI. It's typically added only if there's suspicion of tumor, infection, or inflammation. The standard HARNESS protocol does not require contrast."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How should I prepare for an epilepsy MRI?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Remove all metal objects. Inform staff about implants or pacemakers. You may need to stay still for 45-60 minutes. Avoid caffeine if possible. Bring previous MRI CDs for comparison. You can take your regular seizure medications."
+                    "text": "Yes, 3T provides higher resolution and better signal-to-noise ratio for detecting subtle epileptogenic lesions."
                 }
             }
         ]
     }
     </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1e293b; background: linear-gradient(135deg, #f0fdfa 0%, #fff 100%); }
-        header { background: linear-gradient(135deg, #0d9488, #14b8a6); color: white; padding: 2rem; text-align: center; }
-        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        header p { opacity: 0.9; }
-        nav { background: white; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        nav a { color: #0d9488; text-decoration: none; margin: 0 1rem; font-weight: 500; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-        .faq-item { background: white; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
-        .faq-question { padding: 1.5rem; cursor: pointer; font-weight: 600; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
-        .faq-question:hover { background: #f0fdfa; }
-        .faq-question::after { content: '+'; font-size: 1.5rem; color: #0d9488; }
-        .faq-item.open .faq-question::after { content: '−'; }
-        .faq-answer { padding: 0 1.5rem 1.5rem; display: none; color: #64748b; }
-        .faq-item.open .faq-answer { display: block; }
-        .back-link { display: inline-block; margin: 2rem 0; padding: 0.75rem 1.5rem; background: #0d9488; color: white; text-decoration: none; border-radius: 8px; }
-        .back-link:hover { background: #0f766e; }
-        footer { text-align: center; padding: 2rem; color: #64748b; }
-        @media (max-width: 600px) { header h1 { font-size: 1.5rem; } }
-    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=16">
+    <script defer src="https://analytics.meowachat.cloud/script.js" data-website-id="9b8ff2c2-327e-4b8a-b956-ddc71ad42592"></script>
 </head>
+
 <body>
-    <header>
-        <h1>❓ Epilepsy MRI FAQ</h1>
-        <p>Common questions about brain imaging for seizures</p>
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">Epilepsy<span class="logo-accent">MRI</span></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/#harness" class="nav-link">HARNESS</a></li>
+                    <li><a href="/#patients" class="nav-link">Patients</a></li>
+                    <li><a href="/#clinicians" class="nav-link">Clinicians</a></li>
+                    <li><a href="/#findings" class="nav-link">Findings</a></li>
+                    <li><a href="/#tools" class="nav-link">Tools</a></li>
+                    <li><a href="/faq.html" class="nav-link highlight">FAQ</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button class="nav-toggle" aria-label="Open navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
     </header>
-    
-    <nav>
-        <a href="/">← Back to Home</a>
-        <a href="/#protocol">HARNESS Protocol</a>
-        <a href="/#findings">Findings Atlas</a>
-    </nav>
-    
+
     <main>
-        <div class="faq-item">
-            <div class="faq-question">What is the HARNESS protocol for epilepsy MRI?</div>
-            <div class="faq-answer">HARNESS (Harmonized Neuroimaging of Epilepsy Structural Sequences) is a standardized MRI protocol developed by the ILAE for detecting epilepsy-causing lesions. It includes specific sequences optimized for finding subtle abnormalities like focal cortical dysplasia and hippocampal sclerosis that routine MRI may miss.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Why do I need a special epilepsy MRI if I already had a brain MRI?</div>
-            <div class="faq-answer">Routine brain MRI is designed to detect large abnormalities like tumors or strokes. Epilepsy-causing lesions are often very subtle and require specialized sequences, thinner slices (1mm vs 5mm), and higher field strength (3T vs 1.5T). The HARNESS protocol detects 30-50% more lesions than routine MRI.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Is 3T MRI better than 1.5T for epilepsy?</div>
-            <div class="faq-answer">Yes, 3T MRI provides higher resolution and better signal-to-noise ratio, making it easier to detect subtle epileptogenic lesions. Studies show 3T MRI detects significantly more focal cortical dysplasia and hippocampal sclerosis than 1.5T MRI. Always request 3T for epilepsy imaging when available.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">What lesions does epilepsy MRI look for?</div>
-            <div class="faq-answer">Epilepsy MRI looks for: hippocampal sclerosis (MTS), focal cortical dysplasia (FCD), tumors (ganglioglioma, DNET), cavernomas, vascular malformations, post-traumatic gliosis, encephalitis sequelae, and cortical tubers. Finding a lesion is crucial for surgical planning in drug-resistant epilepsy.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">How long does an epilepsy MRI take?</div>
-            <div class="faq-answer">A complete epilepsy MRI with HARNESS protocol takes 45-60 minutes. This is longer than routine brain MRI (15-20 minutes) because it includes more sequences with thinner slices for detailed evaluation.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">What if my epilepsy MRI is normal?</div>
-            <div class="faq-answer">About 20-30% of epilepsy patients have normal MRI even with optimal protocols (MRI-negative epilepsy). In these cases, other tests like PET scan, ictal SPECT, or MEG may help localize the seizure focus. Advanced MRI post-processing techniques can also reveal subtle abnormalities.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">Do I need contrast for epilepsy MRI?</div>
-            <div class="faq-answer">Contrast (gadolinium) is not routinely needed for epilepsy MRI. It's typically added only if there's suspicion of tumor, infection, or inflammation. The standard HARNESS protocol does not require contrast.</div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">How should I prepare for an epilepsy MRI?</div>
-            <div class="faq-answer">Remove all metal objects. Inform staff about implants or pacemakers. You may need to stay still for 45-60 minutes. Avoid caffeine if possible. Bring previous MRI CDs for comparison. You can take your regular seizure medications.</div>
-        </div>
-        
-        <a href="/" class="back-link">← Back to EpilepsyMRI Guide</a>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 3rem;">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">❓ FAQ</span>
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Common questions about brain imaging for epilepsy, answered by epileptologists</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is the HARNESS protocol for epilepsy MRI?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>HARNESS (Harmonized Neuroimaging of Epilepsy Structural Sequences) is a standardized MRI protocol developed by the ILAE for detecting epilepsy-causing lesions. It includes specific sequences optimized for finding subtle abnormalities like focal cortical dysplasia and hippocampal sclerosis that routine MRI may miss.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Why do I need a special epilepsy MRI if I already had a brain MRI?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Routine brain MRI is designed to detect large abnormalities like tumors or strokes. Epilepsy-causing lesions are often very subtle and require specialized sequences, thinner slices (1mm vs 5mm), and higher field strength (3T vs 1.5T). The HARNESS protocol detects <strong>30-50% more lesions</strong> than routine MRI.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is 3T MRI better than 1.5T for epilepsy?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, 3T MRI provides higher resolution and better signal-to-noise ratio, making it easier to detect subtle epileptogenic lesions. Studies show 3T MRI detects significantly more focal cortical dysplasia and hippocampal sclerosis than 1.5T MRI. <strong>Always request 3T for epilepsy imaging when available.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What lesions does epilepsy MRI look for?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Epilepsy MRI looks for:</p>
+                            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                                <li>Hippocampal sclerosis (MTS)</li>
+                                <li>Focal cortical dysplasia (FCD)</li>
+                                <li>Tumors (ganglioglioma, DNET)</li>
+                                <li>Cavernomas</li>
+                                <li>Vascular malformations</li>
+                                <li>Post-traumatic gliosis</li>
+                                <li>Encephalitis sequelae</li>
+                                <li>Cortical tubers</li>
+                            </ul>
+                            <p>Finding a lesion is crucial for surgical planning in drug-resistant epilepsy.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does an epilepsy MRI take?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A complete epilepsy MRI with HARNESS protocol takes <strong>45-60 minutes</strong>. This is longer than routine brain MRI (15-20 minutes) because it includes more sequences with thinner slices for detailed evaluation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What if my epilepsy MRI is normal?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>About 20-30% of epilepsy patients have normal MRI even with optimal protocols (MRI-negative epilepsy). In these cases, other tests like <strong>PET scan, ictal SPECT, or MEG</strong> may help localize the seizure focus. Advanced MRI post-processing techniques can also reveal subtle abnormalities.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do I need contrast for epilepsy MRI?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Contrast (gadolinium) is <strong>not routinely needed</strong> for epilepsy MRI. It's typically added only if there's suspicion of tumor, infection, or inflammation. The standard HARNESS protocol does not require contrast.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How should I prepare for an epilepsy MRI?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <ul style="margin: 0; padding-left: 1.5rem;">
+                                <li>Remove all metal objects</li>
+                                <li>Inform staff about implants or pacemakers</li>
+                                <li>You may need to stay still for 45-60 minutes</li>
+                                <li>Avoid caffeine if possible</li>
+                                <li>Bring previous MRI CDs for comparison</li>
+                                <li>You can take your regular seizure medications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <span>←</span> Back to EpilepsyMRI Guide
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <p>© 2026 EpilepsyMRI.com | By Epileptologist Dr. Abhishek Gohel</p>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🧠</span>
+                <span>EpilepsyMRI.com</span>
+            </div>
+            <p class="disclaimer">This information is for educational purposes only and does not constitute medical advice.</p>
+            <p class="copyright">© 2026 Dr. Abhishek Gohel & Dr. Rutul Shah. All rights reserved.</p>
+        </div>
     </footer>
-    
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            disable: window.innerWidth < 768
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isOpen = item.classList.contains('open');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                
+                // Toggle current
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                } else {
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
         });
     </script>
 </body>
