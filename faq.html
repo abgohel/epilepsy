@@ -53,7 +53,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=18">
     <script defer src="https://analytics.meowachat.cloud/script.js" data-website-id="9b8ff2c2-327e-4b8a-b956-ddc71ad42592"></script>
 </head>
 
@@ -224,22 +224,43 @@
             disable: window.innerWidth < 768
         });
 
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const isOpen = item.classList.contains('open');
+        // Velvet Accordion - Smooth FAQ
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
                 
-                // Close all others
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                // Set initial height to 0
+                answer.style.maxHeight = '0px';
                 
-                // Toggle current
-                if (!isOpen) {
-                    item.classList.add('open');
-                    btn.setAttribute('aria-expanded', 'true');
-                } else {
-                    btn.setAttribute('aria-expanded', 'false');
-                }
+                question.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const isOpen = item.classList.contains('open');
+                    
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('open');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
+                            otherItem.querySelector('.faq-icon').textContent = '+';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    if (isOpen) {
+                        item.classList.remove('open');
+                        answer.style.maxHeight = '0px';
+                        icon.textContent = '+';
+                    } else {
+                        item.classList.add('open');
+                        answer.style.maxHeight = answer.scrollHeight + 32 + 'px';
+                        icon.textContent = '−';
+                    }
+                });
             });
         });
     </script>
