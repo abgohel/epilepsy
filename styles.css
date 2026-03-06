@@ -1600,16 +1600,48 @@ section[id] {
     }
 }
 
+/* ===== Improved Spacing & Alignment ===== */
+.section {
+    padding: 4rem 0 5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    margin-bottom: 0.75rem;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+}
+
 /* ===== Software Tools Section ===== */
 .tools-section {
     background: var(--color-bg-alt);
+    padding: 5rem 0;
 }
 
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .tool-card {
@@ -1627,9 +1659,14 @@ section[id] {
 }
 
 .tool-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
     border-color: var(--color-primary);
+}
+
+.tool-card:hover .tool-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .tool-icon {

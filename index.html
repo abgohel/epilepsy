@@ -83,7 +83,9 @@
         rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon.png">
        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
-    <link rel="stylesheet" href="styles.css?v=14">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=15">
 <script defer src="https://analytics.meowachat.cloud/script.js" data-website-id="9b8ff2c2-327e-4b8a-b956-ddc71ad42592"></script>
 </head>
 
@@ -122,7 +124,7 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge">
+                    <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
                         <span class="badge-icon">⚡</span>
                         <span>Expert-Reviewed by Epileptologists</span>
                     </div>
@@ -161,7 +163,7 @@
         <section class="section problem-section">
             <div class="container">
                 <div class="problem-grid">
-                    <div class="problem-card wrong">
+                    <div class="problem-card wrong" data-aos="fade-right" data-aos-delay="100">
                         <div class="card-icon" aria-hidden="true">❌</div>
                         <h2>Standard Brain MRI</h2>
                         <ul>
@@ -173,7 +175,7 @@
                         </ul>
                         <div class="card-result bad">Misses up to 30-50% of lesions</div>
                     </div>
-                    <div class="problem-card right">
+                    <div class="problem-card right" data-aos="fade-left" data-aos-delay="200">
                         <div class="card-icon" aria-hidden="true">✅</div>
                         <h2>3T HARNESS Protocol</h2>
                         <ul>
@@ -828,35 +830,35 @@
                 </div>
 
                 <div class="tools-grid">
-                    <a href="https://itksnap.org" target="_blank" rel="noopener" class="tool-card">
+                    <a href="https://itksnap.org" target="_blank" rel="noopener" class="tool-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="tool-icon">🎯</div>
                         <h3>ITK-SNAP</h3>
                         <p>Semi-automatic 3D segmentation. Perfect for hippocampal volumetry and lesion delineation.</p>
                         <span class="tool-platform">Windows • Mac • Linux</span>
                     </a>
 
-                    <a href="https://mipav.cit.nih.gov" target="_blank" rel="noopener" class="tool-card">
+                    <a href="https://mipav.cit.nih.gov" target="_blank" rel="noopener" class="tool-card" data-aos="fade-up" data-aos-delay="150">
                         <div class="tool-icon">🔬</div>
                         <h3>MIPAV</h3>
                         <p>NIH's Medical Image Processing, Analysis, and Visualization. Comprehensive analysis toolkit.</p>
                         <span class="tool-platform">Windows • Mac • Linux</span>
                     </a>
 
-                    <a href="https://horosproject.org" target="_blank" rel="noopener" class="tool-card">
+                    <a href="https://horosproject.org" target="_blank" rel="noopener" class="tool-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="tool-icon">🍎</div>
                         <h3>HOROS</h3>
                         <p>Free DICOM viewer for macOS. Successor to OsiriX. Clean interface for clinical review.</p>
                         <span class="tool-platform">macOS only</span>
                     </a>
 
-                    <a href="https://www.fil.ion.ucl.ac.uk/spm/" target="_blank" rel="noopener" class="tool-card">
+                    <a href="https://www.fil.ion.ucl.ac.uk/spm/" target="_blank" rel="noopener" class="tool-card" data-aos="fade-up" data-aos-delay="250">
                         <div class="tool-icon">📊</div>
                         <h3>SPM (Statistical Parametric Mapping)</h3>
                         <p>MATLAB-based neuroimaging analysis. Industry standard for morphometry and VBM.</p>
                         <span class="tool-platform">Requires MATLAB</span>
                     </a>
 
-                    <a href="https://slicer.org" target="_blank" rel="noopener" class="tool-card">
+                    <a href="https://slicer.org" target="_blank" rel="noopener" class="tool-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="tool-icon">🧊</div>
                         <h3>3D Slicer</h3>
                         <p>Powerful open-source platform for visualization and analysis. Supports DICOM and research formats.</p>
@@ -1021,6 +1023,18 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            disable: window.innerWidth < 768
+        });
+    </script>
 
     <!-- Smooth Scroll & Reveal (Mobile Optimized) -->
     <style>
